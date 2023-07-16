@@ -1,14 +1,6 @@
 section .text
 global sdot_simd
 
-; sdot_simd function
-; Inputs:
-;   int n           - Vector size
-;   long long int* A - Pointer to the first vector
-;   long long int* B - Pointer to the second vector
-; Outputs:
-;   long long int   - Dot product result
-
 sdot_simd:
     push    rbp
     mov     rbp, rsp
@@ -37,8 +29,7 @@ dot_loop:
     phaddd  xmm0, xmm0
     phaddd  xmm0, xmm0
 
-    ; Add the 32-bit sum to the accumulator (eax)
-    movd    edx, xmm0           ; Move the result into edx (lower 32 bits)
+    movd    edx, xmm0           
     add     eax, edx
 
     pop     rbp
