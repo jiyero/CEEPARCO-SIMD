@@ -30,7 +30,7 @@ int main() {
     double nonsimd_time_used;
     double simd_time_used;
     double sumTime = 0;
-/*
+
     //C Kernel and timer
     for (int i = 0; i < 30; i++) {
         clock_t start = clock();    
@@ -60,7 +60,7 @@ int main() {
 
     avg = sumTime / 30;
     printf("Average time for Non-SIMD Kernel in milliseconds: %lf\n\n", avg);
-*/
+
     sumTime = 0;
     
     //SIMD Kernel and Timer
