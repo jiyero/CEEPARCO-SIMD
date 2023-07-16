@@ -1,0 +1,2 @@
+^C:\USERS\USER\SOURCE\REPOS\CERPARCO SIMD\ASMFUNC1.ASM
+D:\nasm1\nasm -f win64 asmfunc1.asm
