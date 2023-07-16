@@ -2,8 +2,11 @@
 
 ![SIMD SC](https://github.com/jiyero/CEEPARCO-SIMD/assets/90267825/4df7c3bd-2ff2-4af9-bee9-c682bf745bbd)
 
-#### Dot product implementation with vectors initialized with the integer 3. Kernels are ran 30 times and average time is taken. Could not implement x86-64 with YMM Register.
-
+# Dot product implementation with vectors initialized with the integer 3. Kernels are ran 30 times and average time is taken. Could not implement x86-64 with YMM Register.
+###
+Main.c         ->   C implementation
+asmfunc1.asm   ->   x86-64 implementation
+asmfunc2.asm   ->   SIMD YMM Register (Attempted)
 
 
 ## C Kernel
