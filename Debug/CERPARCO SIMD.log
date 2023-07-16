@@ -1,0 +1,8 @@
+﻿  main.c
+C:\Users\user\source\repos\CERPARCO SIMD\main.c(21,50): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+C:\Users\user\source\repos\CERPARCO SIMD\main.c(22,50): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+C:\Users\user\source\repos\CERPARCO SIMD\main.c(37,43): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+C:\Users\user\source\repos\CERPARCO SIMD\main.c(52,38): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+main.obj : error LNK2019: unresolved external symbol _sdot_non referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _sdot_simd referenced in function _main
+C:\Users\user\source\repos\CERPARCO SIMD\Debug\CERPARCO SIMD.exe : fatal error LNK1120: 2 unresolved externals

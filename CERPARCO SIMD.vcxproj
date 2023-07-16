@@ -140,6 +140,17 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">asmfunc1.obj</Outputs>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="asmfunc2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">asmfunc2.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\nasm1\nasm -f win64 asmfunc2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\nasm1\nasm -f win64 asmfunc2.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asmfunc2.obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
