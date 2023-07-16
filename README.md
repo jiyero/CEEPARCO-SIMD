@@ -5,8 +5,11 @@
 # Dot product implementation with vectors initialized with the integer 3. Kernels are ran 30 times and average time is taken. Could not implement x86-64 with YMM Register.
 ###
 Main.c         ->   C implementation
+
 asmfunc1.asm   ->   x86-64 implementation
+
 asmfunc2.asm   ->   SIMD YMM Register (Attempted)
+
 
 
 ## C Kernel
